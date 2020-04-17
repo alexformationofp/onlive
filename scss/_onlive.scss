@@ -1,3 +1,7 @@
+.rose{
+  color: #c52747;
+}
+
 #hero{
   background-image: url('../images/hero.jpg');
   background-size: cover;
@@ -6,11 +10,10 @@
   h1{
     font-size: 4rem;
   }
-  .rose{
-    color: #c52747;
-  }
+  
 }
 
-#nextWebinaire{
-  
+#newsletter{
+  background-image: url('../images/bg-newsletter.jpg');
+  background-size: cover;
 }

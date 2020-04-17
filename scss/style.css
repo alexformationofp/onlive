@@ -7785,6 +7785,9 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+.rose {
+  color: #c52747; }
+
 #hero {
   background-image: url("../images/hero.jpg");
   background-size: cover;
@@ -7792,7 +7795,9 @@ a.text-dark:hover, a.text-dark:focus {
   padding-bottom: 7%; }
   #hero h1 {
     font-size: 4rem; }
-  #hero .rose {
-    color: #c52747; }
+
+#newsletter {
+  background-image: url("../images/bg-newsletter.jpg");
+  background-size: cover; }
 
 /*# sourceMappingURL=style.css.map */

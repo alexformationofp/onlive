@@ -47,17 +47,17 @@
             </div>
         </div>
     </section>
-    <section id="avenir" class="pt-5">
+    <section id="avenir" class="py-5">
         <div class="container">
             <h2 class="text-center">Lives à venir</h2>
             <div class="row justify-content-center">
-                <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary">Tous</button>
-                    <button type="button" class="btn btn-secondary">Impression 3D</button>
-                    <button type="button" class="btn btn-secondary">Technologies</button>
-                    <button type="button" class="btn btn-secondary">SEO</button>
-                    <button type="button" class="btn btn-secondary">Développement</button>
-                    <button type="button" class="btn btn-secondary">Gaming</button>
+                <div class="py-5 btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-light">Tous</button>
+                    <button type="button" class="btn btn-light">Impression 3D</button>
+                    <button type="button" class="btn btn-light">Technologies</button>
+                    <button type="button" class="btn btn-light">SEO</button>
+                    <button type="button" class="btn btn-light">Développement</button>
+                    <button type="button" class="btn btn-light">Gaming</button>
                 </div>
             </div>
             <div class="row">
@@ -75,8 +75,36 @@
                     </div>
                 <?php } ?>
             </div>
+            <div class="row justify-content-center">
+                <button type="button" class="center-block btn btn-primary">Charger plus de lives</button>
+            </div>
+            <div class="row justify-content-center">
+                <p>Vous avez raté un live ? Pas de problème !</p>
+            </div>
+            <div class="row justify-content-center">
+                <p>Retrouvez toutes les conférences passées sur la page <a href="#">Onlive Replay</a></p>
+            </div>
         </div>
+    </section>
+    <section id="newsletter" class="py-5">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-md-1"></div>
+                <div class="col-md-4 pl-4 text-white">
+                    <h4>Prenez un siège...</h4>
+                    <h3>Et ne manquez plus aucun <span class="rose">live !</span></h3>
+                    <p>Nous vous tiendrons informé des dernières conférences.</br>Ayez le temps de vous incrire à vos lives préférés et de parler aux conférenciers.</p>
+                    <form>
+                        <div class="form-group">
 
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Votre adresse email">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Je m'inscris</button>
+                    </form>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
 
     </section>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
