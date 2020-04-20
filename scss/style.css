@@ -10027,8 +10027,14 @@ body a {
 }
 body .titrePrincipal {
   font-family: "sequel_sansbold_head";
-  font-size: 67px;
-  line-height: 5rem;
+  font-size: 42px;
+  line-height: 3rem;
+}
+@media only screen and (min-width: 768px) {
+  body .titrePrincipal {
+    font-size: 67px;
+    line-height: 5rem;
+  }
 }
 @media only screen and (min-width: 992px) {
   body .titrePrincipal {

@@ -1,12 +1,12 @@
 <footer>
         <div class="container-lg">
             <div class="row contenuFooter textColor14">
-                <div class="col-md-4 pr-xl-5">
+                <div class="col-12 col-md-4 pr-xl-5">
                     <img src="images/logo-online.png" alt="">
                     <p class="pt-4 pr-xl-5">Permettre au plus grand nombre d’accéder librement, sans contrainte de lieu, de temps ou de rythme à des formations modulaires
                         et souples.</p>
                 </div>
-                <div class="col-md-2">
+                <div class="col-6 col-md-2">
                     <p class="titreFooter textColor15 py-3">Catégories</p>
                     <ul>
                         <li><a href="#">Technologies</a></li>
@@ -16,7 +16,7 @@
                         <li><a href="#">SEO</a></li>
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="col-6 col-md-2">
                     <p class="titreFooter textColor15 py-3">Navigation</p>
                     <ul>
                         <li><a class="js-scrollTo" href="#avenir">Prochain live</a></li>
@@ -26,7 +26,7 @@
                         <li><a class="js-scrollTo" href="#newsletter">M’inscrire</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-12 col-md-4">
                     <p class="titreFooter textColor15 py-3">Qu’est-ce qu’un Live ou “Webinaire” ?</p>
                     <p class="contenuFooter">
                         Webinaire est un mot-valise associant les mots web et séminaire, créé pour désigner toutes les formes de réunions interactives
