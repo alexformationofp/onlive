@@ -1,19 +1,322 @@
-.rose{
-  color: #c52747;
+// XXXXXXXXXXXXXXXXXXXX COULEURS TEXTE XXXXXXXXXXXXXXXXXXXXXXXXXXXXX ./dart-sass/sass.bat scss/style.scss scss/style.css --watch
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+.textColor1 {
+  color: $textColor1;
+}
+.textColor2 {
+  color: $textColor2;
+}
+.textColor3 {
+  color: $textColor3;
+}
+.textColor4 {
+  color: $textColor4;
+}
+.textColor5 {
+  color: $textColor5;
+}
+.textColor6 {
+  color: $textColor6;
+}
+.textColor7 {
+  color: $textColor7;
+}
+.textColor8 {
+  color: $textColor8;
+}
+.textColor9 {
+  color: $textColor9;
+}
+.textColor10 {
+  color: $textColor10;
+}
+.textColor11 {
+  color: $textColor11;
+}
+.textColor12 {
+  color: $textColor12;
+}
+.textColor13 {
+  color: $textColor13;
+}
+.textColor14 {
+  color: $textColor14;
+}
+.textColor15 {
+  color: $textColor15;
+}
+.textColor16 {
+  color: $textColor16;
+}
+.textColor17 {
+  color: $textColor17;
 }
 
-#hero{
-  background-image: url('../images/hero.jpg');
-  background-size: cover;
-  padding-top: 10%;
-  padding-bottom: 7%;
-  h1{
-    font-size: 4rem;
+// XXXXXXXXXXXXXXXXXXXX POLICES XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+body{
+  a {
+  text-decoration: none;
+}
+.titrePrincipal {
+  font-family: "sequel_sansbold_head";
+  font-size: 67px;
+  line-height: 5rem;
+  @media #{$large-up} {
+    font-size: 74px;
+    line-height: 6rem;
   }
+}
+.titre2 {
+  font-family: "sequel_sansbold_body";
+  font-size: 26px;
+  line-height: 1.4;
+}
+.titre3 {
+  font-family: "sequel_sansbold_body";
+  font-size: 18px;
+}
+.petitBouton {
+  font-size: 13px;
+  font-weight: bold;
+}
+.grandBouton {
+  font-size: 16px;
+  font-weight: bold;
+  padding: .5rem 2rem;
+}
+.titre4 {
+  font-family: "sequel_sansbold_head";
+  font-size: 34px;
+}
+.titre5 {
+  font-family: "sequel_sansbold_head";
+  font-size: 40px;
+  @media #{$large-up} {
+    font-size: 42px;
+  }
+}
+.titre6 {
+  font-family: "sequel_sansbold_head";
+  font-size: 22px;
+}
+.messageAvenir {
   
+  font-family: "sequel_sans_medium_body";
+  font-size: 17px;
+}
+.carteDate {
+  font-size: 11px;
+  font-weight: bold;
+}
+.textInfo {
+  font-family: "sequel_sansroman_body";
+  font-size: 17px;
+}
+.carteTitre {
+  font-family: "sequel_sanssemi_bold_head";
+  font-size: 17px;
+}
+.tagCategorie {
+  font-size: 11px;
+}
+.lienGras {
+  font-family: "sequel_sansheavy_head";
+  font-size: 17px;
+}
+.titreFooter {
+  font-family: "sequel_sansbold_head";
+  font-size: 14px;
+}
+.contenuFooter {
+  font-size: 14px;
+}
+.basFooter {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+}
 }
 
-#newsletter{
-  background-image: url('../images/bg-newsletter.jpg');
+// XXXXXXXXXXXXXXXXXXXXXXXXXX Spacing XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+.paddingSection {
+  @include padding-y-section();
+}
+
+// XXXXXXXXXXXXXXXXXXXXXXx Structure de la page  XXXXXXXXXXXXXXXXXXXXXXXXXXX
+#navigation {
+  box-sizing: content-box;
+  @include rgba-bg(#000, 0.8);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: solid $textColor16 1px;
+  .container-lg {
+    color: white;
+    .collapse {
+      flex-grow: 0;
+    }
+  }
+  nav {
+    align-items: baseline;
+  }
+  .form-control {
+    margin: 0;
+    box-shadow: none;
+    background-color: $bgSearch;
+    border-color: $bgSearch;
+    width: 20rem;
+
+    &::placeholder {
+      color: $textColorSearch;
+    }
+    @media #{$extraLarge-up} {
+      width: 29rem;
+    }
+  }
+  .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: $bgSearch;
+    color: $textColorSearch;
+    border-color: $bgSearch;
+    
+  }
+  .input-group-append{
+    cursor: pointer;
+  }
+  .navbar-nav {
+    align-items: baseline;
+  }
+  .nav-link {
+    padding-top: 2.6rem;
+    padding-bottom: 2rem;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    &::after {
+      transition: all 0.3s ease-in-out;
+      content: "";
+      width: 100%;
+      height: 90%;
+      position: absolute;
+      /* top: 12px; */
+      right: 50%;
+      transform: translateX(50%);
+      height: 0px;
+      background-color: transparent;
+      bottom: 0rem;
+    }
+    &:hover {
+      color: white;
+      &::after {
+        background-color: $textColorNav;
+        height: 5px;
+      }
+    }
+  }
+}
+
+#hero {
+  background-image: url("../images/hero.jpg");
   background-size: cover;
+  background-position-x: center;
+  .container-lg {
+    @include padding-y-section();
+    @media #{$large-up} {
+      @include padding-y-section(7em, 4em);
+
+    }
+    @media #{$extraLarge-up}{
+      @include padding-y-section(14.3em, 5em);
+    }
+  }
+  p {
+    line-height: 1.35rem;
+  }
+}
+
+#nextWebinaire{
+  .imageProchainLive{
+    width: 100%;
+    @media #{$large-up} {
+      width: 82%;      
+    }
+  }
+}
+#avenir {
+  .container-lg {
+    max-width: 1400px;
+  }
+}
+#newsletter {
+  background-image: url("../images/bg-newsletter.jpg");
+  background-size: cover;
+  background-position-x: center;
+  @media #{$extraLarge-up}{
+  @include padding-y-section(6.5em, 6.5em);
+  }
+  p {
+    line-height: 1.3rem;
+  }
+  input {
+    background-color: $bgInput;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    height: 2.9rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    &::placeholder {
+      font-style: italic;
+      color: $textColor12;
+    }
+  }
+}
+footer {
+  .container-fluid {
+    background-color: $bgFooter;
+  }
+  .container-lg {
+    background-color: white;
+    @include padding-y-section(3.5em, 3.5em);
+    p {
+      line-height: 1.2rem;
+    }
+    ul {
+      li {
+        padding-top: 0.2rem;
+
+        &:first-of-type {
+          padding-top: 0rem;
+        }
+      }
+    }
+  }
+
+  // li{
+  //   line-height: 2rem;
+  // }
+}
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Logo Onlive  XXXXXXXXXXXXXXXXXXXXXXXx
+
+.pastilleRouge {
+  position: relative;
+  &::after {
+    content: "";
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 100%;
+    background-color: $colorPastille;
+    position: absolute;
+    top: 12px;
+    right: 50%;
+    transform: translateX(83px);
+  }
+}
+
+.borderBas {
+  border-bottom: 4px solid $borderSection;
 }

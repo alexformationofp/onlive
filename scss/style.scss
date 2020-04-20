@@ -1,6 +1,13 @@
+@import 'variables-couleurs';
+@import 'variables-layout';
+@import 'variables-breakpoints';
+@import 'fonts/fonts.scss';
+@import 'functions';
 @import 'scss-bootstrap/functions';
-@import 'variables-bootstrap-onlive.scss';
+@import 'variables-bootstrap-onlive';
 @import 'scss-bootstrap/bootstrap.scss';
+@import 'reset';
+@import'mixins';
 @import 'onlive';
 
 
